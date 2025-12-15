@@ -1,0 +1,70 @@
+/* Delivery Options */
+.delivery-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.delivery-option {
+    display: block;
+    padding: 15px;
+    border: 2px solid #ecf0ff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: white;
+}
+
+.delivery-option:hover {
+    border-color: #5b8af0;
+    box-shadow: 0 4px 12px rgba(91, 138, 240, 0.15);
+}
+
+.delivery-option input[type="radio"] {
+    display: none;
+}
+
+.delivery-option input[type="radio"]:checked+.delivery-info {
+    color: #1f3b83;
+}
+
+.delivery-option input[type="radio"]:checked~.delivery-info {
+    color: #1f3b83;
+}
+
+.delivery-option:has(input[type="radio"]:checked) {
+    border-color: #1f3b83;
+    background: #f8faff;
+}
+
+.delivery-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.delivery-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: #1f3b83;
+}
+
+.delivery-time {
+    font-size: 13px;
+    color: #666;
+}
+
+.delivery-price {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f7b500;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .delivery-methods {
+        grid-template-columns: 1fr;
+    }
+}
