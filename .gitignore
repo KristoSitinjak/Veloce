@@ -1,0 +1,53 @@
+# PHP
+*.log
+*.cache
+
+# Database Configuration (PENTING!)
+# Uncomment jika ingin protect db.php dari ter-upload
+# config/db.php
+
+# Composer
+vendor/
+composer.lock
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+
+# User Uploaded Files (OPTIONAL - hapus comment jika tidak ingin upload gambar user)
+# assets/img/avatars/*
+# !assets/img/avatars/.gitkeep
+# assets/img/*.png
+# assets/img/*.jpg
+# assets/img/*.jpeg
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Session files
+sessions/
+*.session
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Node modules (jika menggunakan npm)
+node_modules/
+package-lock.json
